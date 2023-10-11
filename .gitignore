@@ -1,0 +1,16 @@
+tmp/*
+.venv
+*.pt
+.idea
+__pycache__
+.pytest_cache
+tmp
+data
+logs
+gnn/gnn_transductive/logs
+gnn/gnn_supervised/logs
+succesfull-experiments-2/effective-resistence-sparse-gcn-legacy/
+.ipynb_checkpoints
+sparsified-graphs
+./**/logs
+pytorchgeometric_data
