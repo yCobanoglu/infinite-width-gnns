@@ -12,7 +12,7 @@
 - LD_LIBRARY_PATH needs to be set for lgnn/gnn which use https://github.com/facebookresearch/bitsandbytes
 - Other dependencies can be installed with `gnn/requirements.txt`
 - To run tests install `gnn/requirements-dev.txt` (uses pytest)
-- To see an example installation for ubuntu + usage of screen, see installation.txt
+- To see an example installation for ubuntu, see installation.txt
 
 ## Running Experiments
 
