@@ -1,0 +1,55 @@
+learning_task: "transductive"
+device: "cuda"
+parallel: 1
+runs: 1
+loss: "mse"
+accuracy: "r_squared"
+datasets:
+  - data:
+        dataset: "chameleon"
+        data_split: [ 0.2 ,0.3 ]
+        unlabelled: 0.0
+  - data:
+      dataset: "squirrel"
+      data_split: [ 0.2 ,0.3 ]
+      unlabelled: 0.0
+  - data:
+      dataset: "crocodile"
+      data_split: [ 0.2 ,0.3 ]
+      unlabelled: 0.0
+models:
+  - model:
+      model_name: "gat"
+      adjacency: "default+I"
+      epochs: 300
+      nonlinearity: "sigmoid"
+      batch_size: 1
+      heads: 8
+      symmetric: no
+      untied: no
+      concat: yes
+      layers: 2
+      hidden: 8
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.01
+        weight_decay: 0.005
+  - model:
+      model_name: "gat"
+      adjacency: "default+I"
+      epochs: 300
+      nonlinearity: "sigmoid"
+      batch_size: 1
+      heads: 8
+      symmetric: no
+      untied: yes
+      concat: yes
+      layers: 2
+      hidden: 8
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.01
+        weight_decay: 0.005
+

@@ -1,0 +1,28 @@
+learning_task: "transductive"
+device: "cuda"
+parallel: 1
+runs: 1
+loss: "cross_entropy"
+accuracy: "default"
+datasets:
+  - data:
+      dataset: "chameleon_c"
+      data_split: [ 0.2, 0.3 ]
+      unlabelled: 0.0
+models:
+  - model:
+      model_name: "gcn"
+      adjacency: "welling-normalized"
+      nonlinearity: "relu"
+      batchnorm: yes #very critical
+      epochs: 300
+      batch_size: 1
+      layers: 2
+      hidden: 32
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.1
+        weight_decay: 0.005
+
+

@@ -1,0 +1,321 @@
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized()]
+Layers: 2
+Dataset: facebook
+Dataset:  facebook
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+Train Mask:  0.6001485586166382
+Val Mask:  0.2000495195388794
+Test Mask:  0.19980193674564362
+Adj shape (4039, 4039)
+Number of Edges: 180507
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+Find best regularization using val_mask
+nngp finished
+Find best regularization using val_mask
+ntk finished
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
++=======+======================+===================================+================================+================+===========================+=====================+======================
+==========================================+
+| nngp  | ('kernel_fro', 6.45) | ('train_loss_best_perf', 308.974) | ('train_loss_no_reg', 416.466) | ('reg', 0.174) | ('best_acc_train', 0.45)  | ('Test acc', 0.487) | ('time', 2.07)
+                                          |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+------------------------------------------+
+| ntk   | ('kernel_fro', 9.11) | ('train_loss_best_perf', 309.727) | ('train_loss_no_reg', 350.841) | ('reg', 0.158) | ('best_acc_train', 0.442) | ('Test acc', 0.482) | ('time', 2.07)
+                                          |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+------------------------------------------+
+| gnngp | ('kernel_fro', 3.5)  | ('train_loss_best_perf', 186.33)  | ('train_loss_no_reg', 201.855) | ('reg', 0.005) | ('best_acc_train', 0.722) | ('Test acc', 0.731) | ('time', 2.71)
+                                          |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+------------------------------------------+
+| gntk  | ('kernel_fro', 6.15) | ('train_loss_best_perf', 177.668) | ('train_loss_no_reg', 207.041) | ('reg', 0.025) | ('best_acc_train', 0.728) | ('Test acc', 0.74)  | ('time', 2.71)
+                                          |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+------------------------------------------+
+Total Time : 1.06
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized()]
+Layers: 2
+Dataset: cora
+Dataset:  cora
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets
+like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.05169866979122162
+Val Mask:  0.184638112783432
+Test Mask:  0.369276225566864
+Adj shape (2708, 2708)
+Number of Edges: 13264
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+Find best regularization using val_mask
+nngp finished
+Find best regularization using val_mask
+ntk finished
+Find best regularization using val_mask
+gnngp finished
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+--------------------------------------+
+|       |                      |                                   |                                |                |                           |                     | Dataset: fcora Layer:
+ 2 Adjacency: [WellingNormalized()]   |
++=======+======================+===================================+================================+================+===========================+=====================+======================
+======================================+
+| nngp  | ('kernel_fro', 6.04) | ('train_loss_best_perf', 164.434) | ('train_loss_no_reg', 164.44)  | ('reg', 0.437) | ('best_acc_train', 0.578) | ('Test acc', 0.599) | ('time', 1.12)
+                                      |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+--------------------------------------+
+| ntk   | ('kernel_fro', 6.7)  | ('train_loss_best_perf', 208.447) | ('train_loss_no_reg', 162.428) | ('reg', 10.0)  | ('best_acc_train', 0.578) | ('Test acc', 0.579) | ('time', 1.12)
+                                      |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+--------------------------------------+
+| gnngp | ('kernel_fro', 2.27) | ('train_loss_best_perf', 102.991) | ('train_loss_no_reg', 113.224) | ('reg', 0.158) | ('best_acc_train', 0.792) | ('Test acc', 0.828) | ('time', 1.18)
+                                      |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+--------------------------------------+
+| gntk  | ('kernel_fro', 2.83) | ('train_loss_best_perf', 104.925) | ('train_loss_no_reg', 108.192) | ('reg', 0.275) | ('best_acc_train', 0.792) | ('Test acc', 0.825) | ('time', 1.18)
+                                      |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+--------------------------------------+
+Total Time : 1.14
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized()]
+Layers: 2
+Dataset: citeseer
+Dataset:  citeseer
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets
+like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.03606852889060974
+Val Mask:  0.150285542011261
+Test Mask:  0.300571084022522
+Adj shape (3327, 3327)
+Number of Edges: 12431
+
+Adj shape (3327, 3327)
+Number of Edges: 12431
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+Find best regularization using val_mask
+nngp finished
+Find best regularization using val_mask
+ntk finished
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+------------------------------------------+
+|       |                      |                                   |                                |                |                           |                     | Dataset: fciteseer La
+yer: 2 Adjacency: [WellingNormalized()]   |
++=======+======================+===================================+================================+================+===========================+=====================+======================
+==========================================+
+| nngp  | ('kernel_fro', 4.87) | ('train_loss_best_perf', 189.44)  | ('train_loss_no_reg', 160.897) | ('reg', 2.512) | ('best_acc_train', 0.6)   | ('Test acc', 0.62)  | ('time', 1.55)
+                                          |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+------------------------------------------+
+| ntk   | ('kernel_fro', 5.26) | ('train_loss_best_perf', 189.27)  | ('train_loss_no_reg', 163.403) | ('reg', 2.291) | ('best_acc_train', 0.598) | ('Test acc', 0.622) | ('time', 1.55)
+                                          |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+------------------------------------------+
+| gnngp | ('kernel_fro', 2.3)  | ('train_loss_best_perf', 128.45)  | ('train_loss_no_reg', 139.35)  | ('reg', 0.174) | ('best_acc_train', 0.722) | ('Test acc', 0.711) | ('time', 2.03)
+                                          |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+------------------------------------------+
+| gntk  | ('kernel_fro', 2.65) | ('train_loss_best_perf', 135.634) | ('train_loss_no_reg', 134.772) | ('reg', 0.437) | ('best_acc_train', 0.728) | ('Test acc', 0.719) | ('time', 2.03)
+                                          |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+------------------------------------------+
+Total Time : 1.24
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized()]
+Layers: 2
+Dataset: pubmed
+Dataset:  pubmed
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets
+like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.0030430592596530914
+Val Mask:  0.02535882778465748
+Test Mask:  0.05071765556931496
+Adj shape (19717, 19717)
+Number of Edges: 108365
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+Find best regularization using val_mask
+nngp finished
+Find best regularization using val_mask
+ntk finished
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+----------------------------------------+
+|       |                      |                                   |                                |                |                           |                     | Dataset: fpubmed Laye
+r: 2 Adjacency: [WellingNormalized()]   |
++=======+======================+===================================+================================+================+===========================+=====================+======================
+========================================+
+| nngp  | ('kernel_fro', 1.13) | ('train_loss_best_perf', 126.389) | ('train_loss_no_reg', 112.806) | ('reg', 0.759) | ('best_acc_train', 0.746) | ('Test acc', 0.733) | ('time', 22.4)
+                                        |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+----------------------------------------+
+| ntk   | ('kernel_fro', 1.25) | ('train_loss_best_perf', 131.956) | ('train_loss_no_reg', 113.572) | ('reg', 1.0)   | ('best_acc_train', 0.748) | ('Test acc', 0.724) | ('time', 22.4)
+                                        |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+----------------------------------------+
+| gnngp | ('kernel_fro', 0.43) | ('train_loss_best_perf', 111.366) | ('train_loss_no_reg', 115.523) | ('reg', 0.525) | ('best_acc_train', 0.814) | ('Test acc', 0.796) | ('time', 115.17)
+                                        |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+----------------------------------------+
+| gntk  | ('kernel_fro', 0.53) | ('train_loss_best_perf', 110.784) | ('train_loss_no_reg', 111.059) | ('reg', 0.575) | ('best_acc_train', 0.814) | ('Test acc', 0.794) | ('time', 115.17)
+                                        |
++-------+----------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+----------------------
+----------------------------------------+
+Total Time : 3.61
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized()]
+Layers: 2
+Dataset: chameleon
+Dataset:  chameleon
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets
+like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.4795784056186676
+Val Mask:  0.32015809416770935
+Test Mask:  0.20026350021362305
+Adj shape (2277, 2277)
+One hot encoding not working probably regression problem
+Number of Edges: 65019
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0.1
+Find best regularization using val_mask
+nngp finished
+Find best regularization using val_mask
+ntk finished
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
+-----------------------------------------------+
+|       |                        |                                   |                                |                |                            |                      | Dataset: fchamele
+on Layer: 2 Adjacency: [WellingNormalized()]   |
++=======+========================+===================================+================================+================+============================+======================+==================
+===============================================+
+| nngp  | ('kernel_fro', 342.45) | ('train_loss_best_perf', 640.022) | ('train_loss_no_reg', 845.443) | ('reg', 0.013) | ('R_squared_train', 0.593) | ('R_squared', 0.625) | ('time', 1.14)
+                                               |
++-------+------------------------+-----------------------------------+--------------------------------+----------------+----------------------------+----------------------+------------------
+-----------------------------------------------+
+| ntk   | ('kernel_fro', 444.14) | ('train_loss_best_perf', 556.711) | ('train_loss_no_reg', 572.725) | ('reg', 0.014) | ('R_squared_train', 0.646) | ('R_squared', 0.674) | ('time', 1.14)
+                                               |
++-------+------------------------+-----------------------------------+--------------------------------+----------------+----------------------------+----------------------+------------------
+-----------------------------------------------+
+| gnngp | ('kernel_fro', 304.24) | ('train_loss_best_perf', 595.163) | ('train_loss_no_reg', 595.163) | ('reg', 0.001) | ('R_squared_train', 0.622) | ('R_squared', 0.638) | ('time', 0.88)
+                                               |
++-------+------------------------+-----------------------------------+--------------------------------+----------------+----------------------------+----------------------+------------------
+-----------------------------------------------+
+| gntk  | ('kernel_fro', 386.11) | ('train_loss_best_perf', 573.216) | ('train_loss_no_reg', 577.481) | ('reg', 0.002) | ('R_squared_train', 0.636) | ('R_squared', 0.676) | ('time', 0.88)
+                                               |
++-------+------------------------+-----------------------------------+--------------------------------+----------------+----------------------------+----------------------+------------------
+-----------------------------------------------+
+Total Time : 3.88
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized()]
+Layers: 2
+Dataset: squirrel
+Dataset:  squirrel
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets
+like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.47990772128105164
+Val Mask:  0.3199384808540344
+Test Mask:  0.20015381276607513
+Adj shape (5201, 5201)
+One hot encoding not working probably regression problem
+Number of Edges: 401907
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0.1
+Find best regularization using val_mask
+nngp finished
+Find best regularization using val_mask
+ntk finished
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+---------------
+-------------------------------------------------+
+|       |                         |                                    |                                 |                |                            |                      | Dataset: fsqui
+rrel Layer: 2 Adjacency: [WellingNormalized()]   |
++=======+=========================+====================================+=================================+================+============================+======================+===============
+=================================================+
+| nngp  | ('kernel_fro', 782.75)  | ('train_loss_best_perf', 1570.239) | ('train_loss_no_reg', 2348.327) | ('reg', 0.036) | ('R_squared_train', 0.393) | ('R_squared', 0.45)  | ('time', 2.9)
+                                                 |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+---------------
+-------------------------------------------------+
+| ntk   | ('kernel_fro', 1014.87) | ('train_loss_best_perf', 1508.291) | ('train_loss_no_reg', 1689.268) | ('reg', 0.063) | ('R_squared_train', 0.417) | ('R_squared', 0.48)  | ('time', 2.9)
+                                                 |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+---------------
+-------------------------------------------------+
+| gnngp | ('kernel_fro', 682.78)  | ('train_loss_best_perf', 1465.096) | ('train_loss_no_reg', 1465.096) | ('reg', 0.001) | ('R_squared_train', 0.433) | ('R_squared', 0.479) | ('time', 4.87)
+                                                 |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+---------------
+-------------------------------------------------+
+| gntk  | ('kernel_fro', 854.92)  | ('train_loss_best_perf', 1382.472) | ('train_loss_no_reg', 1405.624) | ('reg', 0.002) | ('R_squared_train', 0.465) | ('R_squared', 0.513) | ('time', 4.87)
+                                                 |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+---------------
+-------------------------------------------------+
+Total Time : 5.34
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized()]
+Layers: 2
+Dataset: crocodile
+Dataset:  crocodile
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets
+like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.49110135436058044
+Val Mask:  0.3124409019947052
+Test Mask:  0.19645774364471436
+Adj shape (11631, 11631)
+One hot encoding not working probably regression problem
+Number of Edges: 353177
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0.1
+Find best regularization using val_mask
+nngp finished
+Find best regularization using val_mask
+ntk finished
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+-----------------------------------------------------------------+
+|       |                         |                                    |                                 |                |                            |                      | Dataset: fcrocodile Layer: 2 Adjacency: [WellingNormalized()]   |
++=======+=========================+====================================+=================================+================+============================+======================+=================================================================+
+| nngp  | ('kernel_fro', 1768.32) | ('train_loss_best_perf', 2217.695) | ('train_loss_no_reg', 2774.949) | ('reg', 0.011) | ('R_squared_train', 0.761) | ('R_squared', 0.785) | ('time', 11.29)                                                 |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+-----------------------------------------------------------------+
+| ntk   | ('kernel_fro', 2288.3)  | ('train_loss_best_perf', 2083.267) | ('train_loss_no_reg', 2173.494) | ('reg', 0.016) | ('R_squared_train', 0.776) | ('R_squared', 0.797) | ('time', 11.29)                                                 |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+-----------------------------------------------------------------+
+| gnngp | ('kernel_fro', 1463.36) | ('train_loss_best_perf', 2295.495) | ('train_loss_no_reg', 2295.495) | ('reg', 0.001) | ('R_squared_train', 0.753) | ('R_squared', 0.778) | ('time', 33.88)                                                 |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+-----------------------------------------------------------------+
+| gntk  | ('kernel_fro', 1834.54) | ('train_loss_best_perf', 2173.068) | ('train_loss_no_reg', 2189.761) | ('reg', 0.002) | ('R_squared_train', 0.766) | ('R_squared', 0.792) | ('time', 33.88)                                                 |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+-----------------------------------------------------------------+
+Total Time : 12.31

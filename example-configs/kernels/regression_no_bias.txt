@@ -1,0 +1,127 @@
+/home/yunus/PycharmProjects/graph-neural-networks/.venv/bin/python /home/yunus/PycharmProjects/graph-neural-networks/gnn/infinite_width/run.py
+2023-10-08 21:28:18.807267: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-10-08 21:28:18.807303: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-10-08 21:28:18.807324: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-10-08 21:28:19.913121: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/yunus/PycharmProjects/graph-neural-networks/.venv/lib/python3.11/site-packages/bitsandbytes/cuda_setup/main.py:166: UserWarning: Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+
+  warn(msg)
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/transforms/gnn4cd/lgnn_utils.py:9: UserWarning: bitsandbytes not installed or not working
+  warnings.warn("bitsandbytes not installed or not working")
+WARNING: CPU random generator seem to be failing, disabling hardware random number generation
+WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized()]
+Layers: 2
+Dataset: chameleon
+Dataset:  chameleon
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+Train Mask:  0.6003513336181641
+Val Mask:  0.19982433319091797
+Test Mask:  0.19982433319091797
+Adj shape (2277, 2277)
+One hot encoding not working probably regression problem
+Number of Edges: 65019
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Find best regularization using val_mask
+nngp finished
+Find best regularization using val_mask
+ntk finished
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+------------------------+------------------------------------+---------------------------------+----------------+-----------------------------+-----------------------+-----------------------------------------------------------------+
+|       |                        |                                    |                                 |                |                             |                       | Dataset: fchameleon Layer: 2 Adjacency: [WellingNormalized()]   |
++=======+========================+====================================+=================================+================+=============================+=======================+=================================================================+
+| nngp  | ('kernel_fro', 371.06) | ('train_loss_best_perf', 2546.517) | ('train_loss_no_reg', 3304.987) | ('reg', 10.0)  | ('R_squared_train', -1.255) | ('R_squared', -1.59)  | ('time', 0.77)                                                  |
++-------+------------------------+------------------------------------+---------------------------------+----------------+-----------------------------+-----------------------+-----------------------------------------------------------------+
+| ntk   | ('kernel_fro', 398.12) | ('train_loss_best_perf', 2414.774) | ('train_loss_no_reg', 3270.19)  | ('reg', 8.318) | ('R_squared_train', -1.139) | ('R_squared', -1.481) | ('time', 0.77)                                                  |
++-------+------------------------+------------------------------------+---------------------------------+----------------+-----------------------------+-----------------------+-----------------------------------------------------------------+
+| gnngp | ('kernel_fro', 82.9)   | ('train_loss_best_perf', 917.572)  | ('train_loss_no_reg', 1219.604) | ('reg', 0.014) | ('R_squared_train', 0.187)  | ('R_squared', 0.175)  | ('time', 0.84)                                                  |
++-------+------------------------+------------------------------------+---------------------------------+----------------+-----------------------------+-----------------------+-----------------------------------------------------------------+
+| gntk  | ('kernel_fro', 101.51) | ('train_loss_best_perf', 836.927)  | ('train_loss_no_reg', 1366.494) | ('reg', 0.021) | ('R_squared_train', 0.259)  | ('R_squared', 0.202)  | ('time', 0.84)                                                  |
++-------+------------------------+------------------------------------+---------------------------------+----------------+-----------------------------+-----------------------+-----------------------------------------------------------------+
+Total Time : 0.22
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized()]
+Layers: 2
+Dataset: squirrel
+Dataset:  squirrel
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+Downloading https://graphmining.ai/datasets/ptg/wiki/squirrel.npz
+Processing...
+Done!
+Train Mask:  0.6000769138336182
+Val Mask:  0.19996154308319092
+Test Mask:  0.19996154308319092
+Adj shape (5201, 5201)
+One hot encoding not working probably regression problem
+Number of Edges: 401907
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+Find best regularization using val_mask
+nngp finished
+Find best regularization using val_mask
+ntk finished
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+------------------------+------------------------------------+---------------------------------+----------------+-----------------------------+-----------------------+----------------------------------------------------------------+
+|       |                        |                                    |                                 |                |                             |                       | Dataset: fsquirrel Layer: 2 Adjacency: [WellingNormalized()]   |
++=======+========================+====================================+=================================+================+=============================+=======================+================================================================+
+| nngp  | ('kernel_fro', 845.31) | ('train_loss_best_perf', 1351.352) | ('train_loss_no_reg', 1840.172) | ('reg', 0.132) | ('R_squared_train', 0.115)  | ('R_squared', -7.917) | ('time', 1.43)                                                 |
++-------+------------------------+------------------------------------+---------------------------------+----------------+-----------------------------+-----------------------+----------------------------------------------------------------+
+| ntk   | ('kernel_fro', 892.5)  | ('train_loss_best_perf', 1330.581) | ('train_loss_no_reg', 1474.376) | ('reg', 0.158) | ('R_squared_train', 0.129)  | ('R_squared', -7.314) | ('time', 1.43)                                                 |
++-------+------------------------+------------------------------------+---------------------------------+----------------+-----------------------------+-----------------------+----------------------------------------------------------------+
+| gnngp | ('kernel_fro', 101.0)  | ('train_loss_best_perf', 3173.358) | ('train_loss_no_reg', 5596.095) | ('reg', 0.016) | ('R_squared_train', -1.077) | ('R_squared', -0.817) | ('time', 6.52)                                                 |
++-------+------------------------+------------------------------------+---------------------------------+----------------+-----------------------------+-----------------------+----------------------------------------------------------------+
+| gntk  | ('kernel_fro', 124.71) | ('train_loss_best_perf', 3094.037) | ('train_loss_no_reg', 7300.679) | ('reg', 0.033) | ('R_squared_train', -1.025) | ('R_squared', -0.757) | ('time', 6.52)                                                 |
++-------+------------------------+------------------------------------+---------------------------------+----------------+-----------------------------+-----------------------+----------------------------------------------------------------+
+Total Time : 1.4
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized()]
+Layers: 2
+Dataset: crocodile
+Dataset:  crocodile
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+Downloading https://graphmining.ai/datasets/ptg/wiki/crocodile.npz
+Processing...
+Done!
+Train Mask:  0.6000344157218933
+Val Mask:  0.19998280704021454
+Test Mask:  0.19998280704021454
+Adj shape (11631, 11631)
+One hot encoding not working probably regression problem
+Number of Edges: 353177
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+Find best regularization using val_mask
+nngp finished
+Find best regularization using val_mask
+ntk finished
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+-----------------------------------------------------------------+
+|       |                         |                                    |                                 |                |                            |                      | Dataset: fcrocodile Layer: 2 Adjacency: [WellingNormalized()]   |
++=======+=========================+====================================+=================================+================+============================+======================+=================================================================+
+| nngp  | ('kernel_fro', 1903.46) | ('train_loss_best_perf', 1726.126) | ('train_loss_no_reg', 2497.259) | ('reg', 0.1)   | ('R_squared_train', 0.72)  | ('R_squared', 0.726) | ('time', 4.49)                                                  |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+-----------------------------------------------------------------+
+| ntk   | ('kernel_fro', 2047.16) | ('train_loss_best_perf', 1739.023) | ('train_loss_no_reg', 1949.905) | ('reg', 0.12)  | ('R_squared_train', 0.718) | ('R_squared', 0.725) | ('time', 4.49)                                                  |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+-----------------------------------------------------------------+
+| gnngp | ('kernel_fro', 455.13)  | ('train_loss_best_perf', 3818.072) | ('train_loss_no_reg', 5395.856) | ('reg', 0.028) | ('R_squared_train', 0.382) | ('R_squared', 0.299) | ('time', 54.18)                                                 |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+-----------------------------------------------------------------+
+| gntk  | ('kernel_fro', 599.55)  | ('train_loss_best_perf', 3624.175) | ('train_loss_no_reg', 6480.101) | ('reg', 0.052) | ('R_squared_train', 0.413) | ('R_squared', 0.34)  | ('time', 54.18)                                                 |
++-------+-------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+-----------------------------------------------------------------+
+Total Time : 7.33

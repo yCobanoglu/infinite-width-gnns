@@ -1,0 +1,68 @@
+learning_task: "inductive"
+device: "cpu"
+parallel: 1
+runs: 1
+loss: "cross_entropy"
+accuracy: "default"
+datasets:
+  - data:
+      dataset: "proteins"
+      data_split: [ 0.2 ,0.2 ]
+      unlabelled: 0.0
+models:
+  - model:
+      model_name: "gcn-pooling-lowrank"
+      adjacency: "default+I"
+      epochs: 100
+      batch_size: 32
+      hidden: 8
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.005
+        weight_decay: 0.0005
+  - model:
+      model_name: "gcn-pooling"
+      adjacency: "default+I"
+      epochs: 100
+      batch_size: 32
+      hidden: 8
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.005
+        weight_decay: 0.0005
+  - model:
+      model_name: "gcn-pooling2"
+      adjacency: "default+I"
+      epochs: 100
+      batch_size: 32
+      hidden: 8
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.005
+        weight_decay: 0.0005
+  - model:
+      model_name: "gcn-pooling3"
+      adjacency: "default+I"
+      epochs: 100
+      batch_size: 32
+      hidden: 8
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.005
+        weight_decay: 0.0005
+  - model:
+      model_name: "gcn-pooling3-2"
+      adjacency: "default+I"
+      epochs: 1
+      batch_size: 32
+      hidden: 8
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.005
+        weight_decay: 0.0005
+

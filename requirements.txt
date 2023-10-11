@@ -1,0 +1,13 @@
+pytest
+pandas
+numpy
+pyyaml
+scipy
+tensorboard
+tabulate
+gitpython
+juliacall
+CMake
+bitsandbytes
+tabulate
+torcheval

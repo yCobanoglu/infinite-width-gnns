@@ -1,0 +1,10 @@
+numpy
+pyyaml
+black
+flake8
+scipy
+sklearn
+networkx
+tensorboard
+pytest
+mkl-service

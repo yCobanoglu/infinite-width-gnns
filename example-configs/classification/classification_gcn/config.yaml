@@ -1,0 +1,71 @@
+learning_task: "transductive"
+device: "cuda"
+parallel: 1
+runs: 1
+loss: "cross_entropy"
+accuracy: "default"
+datasets:
+  - data:
+      dataset: "citeseer"
+      data_split: [ 0.2 ,0.2 ]
+      unlabelled: 0.0
+  - data:
+      dataset: "cora"
+      data_split: [ 0.2 ,0.2 ]
+      unlabelled: 0.0
+  - data:
+      dataset: "cornell"
+      data_split: [ 0.2, 0.2 ]
+      unlabelled: 0.0
+  - data:
+      dataset: "pubmed"
+      data_split: [ 0.2 ,0.2 ]
+      unlabelled: 0.0
+  - data:
+      dataset: "facebook"
+      data_split: [ 0.2, 0.2 ]
+      unlabelled: 0.0
+models:
+  - model:
+      model_name: "gcn"
+      adjacency: "mlp"
+      epochs: 300
+      nonlinearity: "relu"
+      batch_size: 1
+      layers: 2
+      hidden: 32
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.01
+        weight_decay: 0.0005
+  - model:
+      model_name: "gcn"
+      adjacency: "welling-normalized"
+      nonlinearity: "relu"
+      concat: No
+      epochs: 300
+      batch_size: 1
+      layers: 2
+      hidden: 32
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.01
+        weight_decay: 0.0005
+  - model:
+      model_name: "gcn"
+      adjacency: "welling-normalized"
+      nonlinearity: "relu"
+      concat: Yes
+      epochs: 300
+      batch_size: 1
+      layers: 2
+      hidden: 32
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.01
+        weight_decay: 0.0005
+
+

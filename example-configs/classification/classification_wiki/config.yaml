@@ -1,0 +1,90 @@
+learning_task: "transductive"
+device: "cuda"
+parallel: 1
+runs: 1
+loss: "cross_entropy"
+accuracy: "default"
+datasets:
+  - data:
+      dataset: "wiki"
+      data_split: [ 0.2, 0.2 ]
+      unlabelled: 0.0
+models:
+  - model:
+      model_name: "gcn"
+      adjacency: "mlp"
+      epochs: 300
+      nonlinearity: "relu"
+      batch_size: 1
+      layers: 2
+      hidden: 32
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.01
+        weight_decay: 0.0005
+  - model:
+      model_name: "gcn"
+      adjacency: "welling-normalized"
+      nonlinearity: "relu"
+      concat: No
+      epochs: 300
+      batch_size: 1
+      layers: 2
+      hidden: 32
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.01
+        weight_decay: 0.0005
+  - model:
+      model_name: "gcn"
+      adjacency: "welling-normalized"
+      nonlinearity: "relu"
+      concat: Yes
+      epochs: 300
+      batch_size: 1
+      layers: 3
+      hidden: 32
+      dropout: 0.5
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.01
+        weight_decay: 0.0005
+  - model:
+      model_name: "gat"
+      adjacency: "default+I"
+      epochs: 300
+      nonlinearity: "elu"
+      batch_size: 1
+      heads: 8
+      symmetric: no
+      untied: no
+      concat: yes
+      layers: 2
+      hidden: 64
+      dropout: 0.6
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.005
+        weight_decay: 0.0005
+  - model:
+      model_name: "gat"
+      adjacency: "default+I"
+      nonlinearity: "elu"
+      epochs: 300
+      batch_size: 1
+      heads: 8
+      symmetric: no
+      untied: yes
+      concat: yes
+      layers: 2
+      hidden: 64
+      dropout: 0.6
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.005
+        weight_decay: 0.0005
+
+
+

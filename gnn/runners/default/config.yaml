@@ -1,0 +1,26 @@
+learning_task: "transductive"
+loss: "cross_entropy"
+accuracy: "default"
+data:
+  dataset: "tosca"
+  unlabelled: 0.2
+  data_split: [ 0.2, 0.2 ]
+model:
+  model_name: "gcn"
+  adjacency: "default"
+  epochs: 100
+  dropout: 0.5
+  hidden: 64
+  batch_size: 1
+  optimizer:
+    optimizer_name: "adam"
+    lr: 0.01
+    weight_decay: 0.01
+
+
+
+
+
+
+
+

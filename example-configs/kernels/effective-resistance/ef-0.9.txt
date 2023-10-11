@@ -1,0 +1,309 @@
+2023-10-09 00:11:16.187541: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+EF: 0.9
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized(), EffectiveResistance()]
+Layers: 2
+Dataset: facebook
+Dataset:  facebook
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+Train Mask:  0.6001485586166382
+Val Mask:  0.2000495195388794
+Test Mask:  0.19980193674564362
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+/home/ubuntu/graph-neural-networks/gnn/sparsify/call_julia_sparsify.py:77: UserWarning: Total Edges: 180507
+  warnings.warn(f"Total Edges: {np.count_nonzero(adj)}")
+/home/ubuntu/graph-neural-networks/gnn/sparsify/call_julia_sparsify.py:78: UserWarning: Total Edges: 16580
+  warnings.warn(f"Total Edges: {np.count_nonzero(sparsified)}")
+/home/ubuntu/graph-neural-networks/gnn/sparsify/call_julia_sparsify.py:79: UserWarning: Reduction: 0.9081476064640153
+  warnings.warn(f"Reduction: {1 - np.count_nonzero(sparsified) / np.count_nonzero(adj)}")
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+Adj shape (4039, 4039)
+Number of Edges: 16494
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+-------------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+---------------------------------------------------------------------------------------+
+|       |                         |                                   |                                |                |                           |                     | Dataset: ffacebook Layer: 2 Adjacency: [WellingNormalized(), EffectiveResistance()]   |
++=======+=========================+===================================+================================+================+===========================+=====================+=======================================================================================+
+| gnngp | ('kernel_fro', 3420.15) | ('train_loss_best_perf', 263.523) | ('train_loss_no_reg', 430.847) | ('reg', 0.052) | ('best_acc_train', 0.645) | ('Test acc', 0.651) | ('time', 2.65)                                                                        |
++-------+-------------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+---------------------------------------------------------------------------------------+
+| gntk  | ('kernel_fro', 5752.79) | ('train_loss_best_perf', 261.797) | ('train_loss_no_reg', 534.248) | ('reg', 0.091) | ('best_acc_train', 0.647) | ('Test acc', 0.649) | ('time', 2.65)                                                                        |
++-------+-------------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+---------------------------------------------------------------------------------------+
+Total Time : 0.9
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized(), EffectiveResistance()]
+Layers: 2
+Dataset: cora
+Dataset:  cora
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.05169866979122162
+Val Mask:  0.184638112783432
+Test Mask:  0.369276225566864
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+Adj shape (2708, 2708)
+Number of Edges: 8244
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+------------------------+-----------------------------------+--------------------------------+----------------+--------------------------+---------------------+-----------------------------------------------------------------------------------+
+|       |                        |                                   |                                |                |                          |                     | Dataset: fcora Layer: 2 Adjacency: [WellingNormalized(), EffectiveResistance()]   |
++=======+========================+===================================+================================+================+==========================+=====================+===================================================================================+
+| gnngp | ('kernel_fro', 868.82) | ('train_loss_best_perf', 178.362) | ('train_loss_no_reg', 276.673) | ('reg', 2.754) | ('best_acc_train', 0.77) | ('Test acc', 0.771) | ('time', 1.16)                                                                    |
++-------+------------------------+-----------------------------------+--------------------------------+----------------+--------------------------+---------------------+-----------------------------------------------------------------------------------+
+| gntk  | ('kernel_fro', 1181.5) | ('train_loss_best_perf', 166.632) | ('train_loss_no_reg', 247.97)  | ('reg', 1.738) | ('best_acc_train', 0.77) | ('Test acc', 0.778) | ('time', 1.16)                                                                    |
++-------+------------------------+-----------------------------------+--------------------------------+----------------+--------------------------+---------------------+-----------------------------------------------------------------------------------+
+Total Time : 0.97
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized(), EffectiveResistance()]
+Layers: 2
+Dataset: citeseer
+Dataset:  citeseer
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.03606852889060974
+Val Mask:  0.150285542011261
+Test Mask:  0.300571084022522
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+Adj shape (3327, 3327)
+Number of Edges: 7642
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+------------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+---------------------------------------------------------------------------------------+
+|       |                        |                                   |                                |                |                           |                     | Dataset: fciteseer Layer: 2 Adjacency: [WellingNormalized(), EffectiveResistance()]   |
++=======+========================+===================================+================================+================+===========================+=====================+=======================================================================================+
+| gnngp | ('kernel_fro', 336.44) | ('train_loss_best_perf', 197.539) | ('train_loss_no_reg', 350.248) | ('reg', 3.02)  | ('best_acc_train', 0.684) | ('Test acc', 0.685) | ('time', 1.92)                                                                        |
++-------+------------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+---------------------------------------------------------------------------------------+
+| gntk  | ('kernel_fro', 433.97) | ('train_loss_best_perf', 198.154) | ('train_loss_no_reg', 320.944) | ('reg', 3.631) | ('best_acc_train', 0.684) | ('Test acc', 0.689) | ('time', 1.92)                                                                        |
++-------+------------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+---------------------------------------------------------------------------------------+
+Total Time : 1.06
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized(), EffectiveResistance()]
+Layers: 2
+Dataset: pubmed
+Dataset:  pubmed
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.0030430592596530914
+Val Mask:  0.02535882778465748
+Test Mask:  0.05071765556931496
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+Adj shape (19717, 19717)
+Number of Edges: 60800
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+------------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+-------------------------------------------------------------------------------------+
+|       |                        |                                   |                                |                |                           |                     | Dataset: fpubmed Layer: 2 Adjacency: [WellingNormalized(), EffectiveResistance()]   |
++=======+========================+===================================+================================+================+===========================+=====================+=====================================================================================+
+| gnngp | ('kernel_fro', 395.8)  | ('train_loss_best_perf', 146.308) | ('train_loss_no_reg', 472.451) | ('reg', 0.437) | ('best_acc_train', 0.784) | ('Test acc', 0.767) | ('time', 114.94)                                                                    |
++-------+------------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+-------------------------------------------------------------------------------------+
+| gntk  | ('kernel_fro', 526.65) | ('train_loss_best_perf', 145.246) | ('train_loss_no_reg', 403.0)   | ('reg', 0.479) | ('best_acc_train', 0.784) | ('Test acc', 0.774) | ('time', 114.94)                                                                    |
++-------+------------------------+-----------------------------------+--------------------------------+----------------+---------------------------+---------------------+-------------------------------------------------------------------------------------+
+Total Time : 3.81
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized(), EffectiveResistance()]
+Layers: 2
+Dataset: chameleon
+Dataset:  chameleon
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.4795784056186676
+Val Mask:  0.32015809416770935
+Test Mask:  0.20026350021362305
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+Adj shape (2277, 2277)
+One hot encoding not working probably regression problem
+Number of Edges: 8218
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0.1
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+-------------------------+-----------------------------------+---------------------------------+----------------+----------------------------+----------------------+----------------------------------------------------------------------------------------+
+|       |                         |                                   |                                 |                |                            |                      | Dataset: fchameleon Layer: 2 Adjacency: [WellingNormalized(), EffectiveResistance()]   |
++=======+=========================+===================================+=================================+================+============================+======================+========================================================================================+
+| gnngp | ('kernel_fro', 5391.35) | ('train_loss_best_perf', 869.87)  | ('train_loss_no_reg', 3562.674) | ('reg', 0.158) | ('R_squared_train', 0.447) | ('R_squared', 0.452) | ('time', 0.94)                                                                         |
++-------+-------------------------+-----------------------------------+---------------------------------+----------------+----------------------------+----------------------+----------------------------------------------------------------------------------------+
+| gntk  | ('kernel_fro', 8898.04) | ('train_loss_best_perf', 871.871) | ('train_loss_no_reg', 3412.722) | ('reg', 0.209) | ('R_squared_train', 0.446) | ('R_squared', 0.445) | ('time', 0.94)                                                                         |
++-------+-------------------------+-----------------------------------+---------------------------------+----------------+----------------------------+----------------------+----------------------------------------------------------------------------------------+
+Total Time : 3.98
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized(), EffectiveResistance()]
+Layers: 2
+Dataset: squirrel
+Dataset:  squirrel
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.47990772128105164
+Val Mask:  0.3199384808540344
+Test Mask:  0.20015381276607513
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+Adj shape (5201, 5201)
+One hot encoding not working probably regression problem
+Number of Edges: 21590
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0.1
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+--------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+---------------------------------------------------------------------------------------+
+|       |                          |                                    |                                 |                |                            |                      | Dataset: fsquirrel Layer: 2 Adjacency: [WellingNormalized(), EffectiveResistance()]   |
++=======+==========================+====================================+=================================+================+============================+======================+=======================================================================================+
+| gnngp | ('kernel_fro', 10377.66) | ('train_loss_best_perf', 1977.488) | ('train_loss_no_reg', 4720.149) | ('reg', 0.275) | ('R_squared_train', 0.235) | ('R_squared', 0.275) | ('time', 4.58)                                                                        |
++-------+--------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+---------------------------------------------------------------------------------------+
+| gntk  | ('kernel_fro', 17190.36) | ('train_loss_best_perf', 1974.109) | ('train_loss_no_reg', 5536.554) | ('reg', 0.363) | ('R_squared_train', 0.236) | ('R_squared', 0.272) | ('time', 4.58)                                                                        |
++-------+--------------------------+------------------------------------+---------------------------------+----------------+----------------------------+----------------------+---------------------------------------------------------------------------------------+
+Total Time : 4.81
+----------------------------------------------------------------------------------------------------
+Experiment:  [WellingNormalized(), EffectiveResistance()]
+Layers: 2
+Dataset: crocodile
+Dataset:  crocodile
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+/home/ubuntu/graph-neural-networks/gnn/transforms/basic_transforms.py:181: UserWarning: test_val_split is ignored because train_mask and test_mask are provided by the dataset. Some datasets like Cora could not have labels for all nodes!
+  warnings.warn(
+Train Mask:  0.49110135436058044
+Val Mask:  0.3124409019947052
+Test Mask:  0.19645774364471436
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/G7S6S/src/solverInterface.jl:217
+Adj shape (11631, 11631)
+One hot encoding not working probably regression problem
+Number of Edges: 51412
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0.1
+Find best regularization using val_mask
+gnngp finished
+Find best regularization using val_mask
+gntk finished
++-------+---------------------------+------------------------------------+----------------------------------+--------------+----------------------------+----------------------+----------------------------------------------------------------------------------------+
+|       |                           |                                    |                                  |              |                            |                      | Dataset: fcrocodile Layer: 2 Adjacency: [WellingNormalized(), EffectiveResistance()]   |
++=======+===========================+====================================+==================================+==============+============================+======================+========================================================================================+
+| gnngp | ('kernel_fro', 344936.29) | ('train_loss_best_perf', 4989.113) | ('train_loss_no_reg', 15427.098) | ('reg', 0.1) | ('R_squared_train', 0.463) | ('R_squared', 0.422) | ('time', 33.8)                                                                         |
++-------+---------------------------+------------------------------------+----------------------------------+--------------+----------------------------+----------------------+----------------------------------------------------------------------------------------+
+| gntk  | ('kernel_fro', 589596.38) | ('train_loss_best_perf', 5200.957) | ('train_loss_no_reg', 18681.955) | ('reg', 0.1) | ('R_squared_train', 0.44)  | ('R_squared', 0.383) | ('time', 33.8)                                                                         |
++-------+---------------------------+------------------------------------+----------------------------------+--------------+----------------------------+----------------------+----------------------------------------------------------------------------------------+
+Total Time : 9.34

@@ -1,0 +1,70 @@
+learning_task: "transductive"
+device: "cuda"
+parallel: 1
+runs: 1
+loss: "mse"
+accuracy: "default"
+datasets:
+  - data:
+      dataset: "wiki"
+      data_split: [ 0.2, 0.2 ]
+      unlabelled: 0.0
+  - data:
+      dataset: "cora"
+      data_split: [ 0.2, 0.2 ]
+      unlabelled: 0.0
+  - data:
+      dataset: "citeseer"
+      data_split: [ 0.2, 0.2 ]
+      unlabelled: 0.0
+models:
+  - model:
+      model_name: "gcn"
+      adjacency: "welling-normalized"
+      epochs: 200
+      nonlinearity: "relu"
+      batch_size: 1
+      layers: 2
+      hidden: 8
+      dropout: 0
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.001
+  - model:
+      model_name: "gcn"
+      adjacency: "welling-normalized"
+      epochs: 200
+      nonlinearity: "relu"
+      batch_size: 1
+      layers: 2
+      hidden: 32
+      dropout: 0
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.001
+  - model:
+      model_name: "gcn"
+      adjacency: "welling-normalized"
+      epochs: 200
+      nonlinearity: "relu"
+      batch_size: 1
+      layers: 2
+      hidden: 128
+      dropout: 0
+      optimizer:
+        optimizer_name: "sgd"
+        lr: 0.001
+  - model:
+      model_name: "gcn"
+      adjacency: "welling-normalized"
+      epochs: 200
+      nonlinearity: "relu"
+      batch_size: 1
+      layers: 2
+      hidden: 512
+      dropout: 0
+      optimizer:
+        optimizer_name: "adam"
+        lr: 0.001
+
+

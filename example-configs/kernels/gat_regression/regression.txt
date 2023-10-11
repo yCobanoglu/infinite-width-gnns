@@ -1,0 +1,217 @@
+Downloading https://graphmining.ai/datasets/ptg/wiki/chameleon.npz
+Processing...
+Done!
+Train Mask:  0.6003513336181641
+Val Mask:  0.19982433319091797
+Test Mask:  0.19982433319091797
+Adj shape (2277, 2277)
+One hot encoding not working probably regression problem
+Number of Edges: 65019
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0.1
+Calculating Adjacency Kernel Matrix
+Elapsed Time : 17.1753mins
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2277/2277 [00:28<00:00, 78.91it/s]
+Elapsed Time Batch Mul: 0.5418mins
+Calculating Adjacency Kernel Matrix
+Elapsed Time : 13.7615mins
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2277/2277 [00:25<00:00, 90.72it/s]
+Elapsed Time Batch Mul: 0.4713mins
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2277/2277 [00:18<00:00, 123.98it/s]
+Elapsed Time Batch Mul: 0.3589mins
+Find best regularization using val_mask
+gat_gp finished
+Find best regularization using val_mask
+gat_ntk finished
++---------+-----------------------------+------------------------------------+----------------------------------+----------------+-----------------------------+------------------------+------------------------------------------------------+
+|         |                             |                                    |                                  |                |                             |                        | Dataset: fchameleon Layer: 2 Adjacency: [AddEye()]   |
++=========+=============================+====================================+==================================+================+=============================+========================+======================================================+
+| gat_gp  | ('kernel_fro', 205704480.0) | ('train_loss_best_perf', 4844.72)  | ('train_loss_no_reg', 70971.914) | ('reg', 0.174) | ('R_squared_train', -3.291) | ('R_squared', -12.146) | ('time', 1995.88)                                    |
++---------+-----------------------------+------------------------------------+----------------------------------+----------------+-----------------------------+------------------------+------------------------------------------------------+
+| gat_ntk | ('kernel_fro', 498055200.0) | ('train_loss_best_perf', 4193.259) | ('train_loss_no_reg', 38204.73)  | ('reg', 0.145) | ('R_squared_train', -2.714) | ('R_squared', -8.753)  | ('time', 1995.88)                                    |
++---------+-----------------------------+------------------------------------+----------------------------------+----------------+-----------------------------+------------------------+------------------------------------------------------+
+
+/home/yunus/PycharmProjects/graph-neural-networks/.venv/bin/python /home/yunus/PycharmProjects/graph-neural-networks/gnn/infinite_width/run.py
+2023-10-09 02:44:25.598349: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-10-09 02:44:25.598380: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-10-09 02:44:25.598401: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-10-09 02:44:26.252114: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/yunus/PycharmProjects/graph-neural-networks/.venv/lib/python3.11/site-packages/bitsandbytes/cuda_setup/main.py:166: UserWarning: Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+
+  warn(msg)
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/transforms/gnn4cd/lgnn_utils.py:9: UserWarning: bitsandbytes not installed or not working
+  warnings.warn("bitsandbytes not installed or not working")
+WARNING: CPU random generator seem to be failing, disabling hardware random number generation
+WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff
+EF: 0.9
+----------------------------------------------------------------------------------------------------
+Experiment:  [AddEye(), EffectiveResistance()]
+Layers: 2
+Dataset: squirrel
+Dataset:  squirrel
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+Train Mask:  0.6000769138336182
+Val Mask:  0.19996154308319092
+Test Mask:  0.19996154308319092
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/sparsify/call_julia_sparsify.py:77: UserWarning: Total Edges: 401907
+  warnings.warn(f"Total Edges: {np.count_nonzero(adj)}")
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/sparsify/call_julia_sparsify.py:78: UserWarning: Total Edges: 36546
+  warnings.warn(f"Total Edges: {np.count_nonzero(sparsified)}")
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/sparsify/call_julia_sparsify.py:79: UserWarning: Reduction: 0.9090685158506819
+  warnings.warn(f"Reduction: {1 - np.count_nonzero(sparsified) / np.count_nonzero(adj)}")
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+Adj shape (5201, 5201)
+One hot encoding not working probably regression problem
+Number of Edges: 36610
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0.1
+Calculating Adjacency Kernel Matrix
+Elapsed Time : 199.3074mins
+100%|██████████| 5201/5201 [11:56<00:00,  7.26it/s]
+Elapsed Time Batch Mul: 11.9861mins
+Calculating Adjacency Kernel Matrix
+Elapsed Time : 197.5262mins
+100%|██████████| 5201/5201 [11:20<00:00,  7.65it/s]
+Elapsed Time Batch Mul: 11.3874mins
+100%|██████████| 5201/5201 [11:18<00:00,  7.66it/s]
+Elapsed Time Batch Mul: 11.3612mins
+Find best regularization using val_mask
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+gat_gp finished
+Find best regularization using val_mask
+gat_ntk finished
++---------+-----------------------------+-------------------------------------+-----------------------------------+---------------+------------------------------+------------------------+----------------------------------------------------------------------------+
+|         |                             |                                     |                                   |               |                              |                        | Dataset: fsquirrel Layer: 2 Adjacency: [AddEye(), EffectiveResistance()]   |
++=========+=============================+=====================================+===================================+===============+==============================+========================+============================================================================+
+| gat_gp  | ('kernel_fro', 50971720.0)  | ('train_loss_best_perf', 22362.43)  | ('train_loss_no_reg', 229771.578) | ('reg', 10.0) | ('R_squared_train', -13.638) | ('R_squared', -13.585) | ('time', 25956.53)                                                         |
++---------+-----------------------------+-------------------------------------+-----------------------------------+---------------+------------------------------+------------------------+----------------------------------------------------------------------------+
+| gat_ntk | ('kernel_fro', 116938870.0) | ('train_loss_best_perf', 21424.768) | ('train_loss_no_reg', 125999.977) | ('reg', 10.0) | ('R_squared_train', -13.024) | ('R_squared', era45) | ('time', 25956.53)                                                         |
++---------+-----------------------------+-------------------------------------+-----------------------------------+---------------+------------------------------+------------------------+----------------------------------------------------------------------------+
+Total Time : 433.29
+
+Process finished with exit code 0
+
+n.py
+2023-10-09 16:03:58.210489: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-10-09 16:03:58.210527: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-10-09 16:03:58.210545: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-10-09 16:03:58.853476: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/yunus/PycharmProjects/graph-neural-networks/.venv/lib/python3.11/site-packages/bitsandbytes/cuda_setup/main.py:166: UserWarning: Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+
+  warn(msg)
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/transforms/gnn4cd/lgnn_utils.py:9: UserWarning: bitsandbytes not installed or not working
+  warnings.warn("bitsandbytes not installed or not working")
+WARNING: CPU random generator seem to be failing, disabling hardware random number generation
+WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff
+EF: 0.9
+----------------------------------------------------------------------------------------------------
+Experiment:  [AddEye(), EffectiveResistance()]
+Layers: 2
+Dataset: crocodile
+Dataset:  crocodile
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/transforms/basic_transforms.py:76: UserWarning: Edge Weights are set to 1 automatically
+  warnings.warn("Edge Weights are set to 1 automatically")
+Train Mask:  0.6000344157218933
+Val Mask:  0.19998280704021454
+Test Mask:  0.19998280704021454
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/sparsify/call_julia_sparsify.py:77: UserWarning: Total Edges: 353177
+  warnings.warn(f"Total Edges: {np.count_nonzero(adj)}")
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/sparsify/call_julia_sparsify.py:78: UserWarning: Total Edges: 34298
+  warnings.warn(f"Total Edges: {np.count_nonzero(sparsified)}")
+/home/yunus/PycharmProjects/graph-neural-networks/gnn/sparsify/call_julia_sparsify.py:79: UserWarning: Reduction: 0.9028872208552652
+  warnings.warn(f"Reduction: {1 - np.count_nonzero(sparsified) / np.count_nonzero(adj)}")
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+┌ Warning: Calling sparsify with ep > 1 can produce a disconnected graph.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/sparsify.jl:18
+┌ Warning: The matrix should not have any nonzero diagonal entries.
+└ @ Laplacians ~/.julia/packages/Laplacians/JMcKl/src/solverInterface.jl:217
+Adj shape (11631, 11631)
+One hot encoding not working probably regression problem
+Number of Edges: 34170
+NONLINEAR: True
+SIGMA_W: 1 SIGMA_B: 0.1
+Calculating Adjacency Kernel Matrix
+Elapsed Time : 239.2395mins
+100%|█████████████████████████████████████| 11631/11631 [49:24<00:00,  3.92it/s]
+Elapsed Time Batch Mul: 49.5735mins
+Calculating Adjacency Kernel Matrix
+Elapsed Time : 227.5581mins
+100%|█████████████████████████████████████| 11631/11631 [47:21<00:00,  4.09it/s]
+Elapsed Time Batch Mul: 47.5235mins
+100%|█████████████████████████████████████| 11631/11631 [47:44<00:00,  4.06it/s]
+Elapsed Time Batch Mul: 47.901mins
+Find best regularization using val_mask
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+gat_gp finished
+Find best regularization using val_mask
+gat_ntk finished
++---------+-----------------------------+-------------------------------------+----------------------------------+----------------+-----------------------------+------------------------+-----------------------------------------------------------------------------+
+|         |                             |                                     |                                  |                |                             |                        | Dataset: fcrocodile Layer: 2 Adjacency: [AddEye(), EffectiveResistance()]   |
++=========+=============================+=====================================+==================================+================+=============================+========================+=============================================================================+
+| gat_gp  | ('kernel_fro', 235399490.0) | ('train_loss_best_perf', 33233.555) | ('train_loss_no_reg', 58949.129) | ('reg', 1.738) | ('R_squared_train', -4.383) | ('R_squared', -16.94)  | ('time', 36884.32)                                                          |
++---------+-----------------------------+-------------------------------------+----------------------------------+----------------+-----------------------------+------------------------+-----------------------------------------------------------------------------+
+| gat_ntk | ('kernel_fro', 564345660.0) | ('train_loss_best_perf', 33076.23)  | ('train_loss_no_reg', 52266.07)  | ('reg', 2.089) | ('R_squared_train', -4.358) | ('R_squared', -17.693) | ('time', 36884.32)                                                          |
++---------+-----------------------------+-------------------------------------+----------------------------------+----------------+-----------------------------+------------------------+-----------------------------------------------------------------------------+
+Total Time : 617.49
+
+
+
+
+

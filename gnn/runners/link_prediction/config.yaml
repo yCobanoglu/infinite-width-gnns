@@ -1,0 +1,19 @@
+learning_task: "link prediction"
+data:
+  dataset: "proteins"
+  data_split: [0.2]
+model:
+  model_name: "gae"
+  encoder: "gcn"
+  epochs: 100
+  dropout: 0.5
+  hidden: 64
+  batch_size: 64
+  optimizer:
+    optimizer_name: "adam"
+    lr: 0.01
+    weight_decay: 0.01
+
+
+
+
