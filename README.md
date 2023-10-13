@@ -27,8 +27,8 @@ For example configs see `gnn/example-configs/` directory. <br/>
 ### For some quick runs 
 Classification and Regression for all Models and multiple datasets with one command, but GAT models need to be run seperatly because it uses 0-1 Adjacency Matrix and other models use WellingNormalized Adjacency Matrix <br/>
 Kernels and GP do not use cuda. <br/>
-export MKL_DYNAMIC=FALSE <br/>
-export MKL_INTERFACE_LAYER=ILP64 <br/>
+`export MKL_DYNAMIC=FALSE` <br/>
+`export MKL_INTERFACE_LAYER=ILP64` <br/>
 ef stands for effective resistance (how many percent of edges should be deleted) <br/>
 
  - `python3 gnn/infinite_width/run.py --datasets "cora citeseer" --models "nn gnn sgnn"`
