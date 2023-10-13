@@ -8,9 +8,9 @@
 - Julia and Laplacians.jl for [Effective Resistance](https://github.com/danspielman/Laplacians.jl). Julia will get intsalled automatically by juliacall in requirements.txt (once installed you have to call the julia binary in your venv and from there install Laplacians: `import Pkg; Pkg.add("Laplacians")` 
 - [Pytorch](https://pytorch.org/), [Pytorch-Geometric](https://pytorch-geometric.readthedocs.io/en/latest/), [Neural Tangents](https://github.com/google/neural-tangents)
 - [Sparse-Dot-MKL](https://github.com/flatironinstitute/sparse_dot) which requires Intel MKL
-- LD_LIBRARY_PATH needs to be set for lgnn/gnn which use https://github.com/facebookresearch/bitsandbytes
+- Optional: LD_LIBRARY_PATH needs to be set for lgnn/gnn which use https://github.com/facebookresearch/bitsandbytes
 - Other dependencies can be installed with `gnn/requirements.txt`
-- To run tests install `gnn/requirements-dev.txt` (uses pytest)
+- Optional: To run tests install `gnn/requirements-dev.txt` (uses pytest)
 - To see an example installation for ubuntu, see installation.txt
 
 ## Running Experiments
