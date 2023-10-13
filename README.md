@@ -19,6 +19,7 @@
 Run `gnn/run_experiments.py` with path to directory that contains a `config.yaml` file. <br/>
 For example `gnn/run_experiments.py ./` will use the `gnn/config.yaml`. <br/>
 For example configs see `gnn/example-configs/` directory. <br/>
+The results will be save in "results.txt" in the same directory. <br/>
 `gnn/run_experiments.py ./ -t` will use the `gnn/config.yaml` and make a test run (meaning one epoch only to check if everything works). <br/>
 `PYTHONUNBUFFERED=1;LD_LIBRARY_PATH=/opt/cuda/lib64;BITSANDBYTES_NOWELCOME=1;PYTHONOPTIMIZE=1 gnn/run_experiments.py ./` has to be used for running experiments in parallel <br/>
 `PYTHONOPTIMIZE=1` will remove assert statements and has to be set to spawn processes within processes (which will been spawned by run_experiments.py)
