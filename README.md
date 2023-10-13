@@ -1,6 +1,7 @@
-# Code for Infinite Width Graph Neural Networks for Node Regression/Classification
+# Code for Infinite Width Graph Neural Networks for Node Regression/ Classification
 
 ## Paper
+[Infinite Width Graph Neural Networks for Node Regression/ Classification] (https://arxiv.org/abs/2310.08176) 
 
 
 
