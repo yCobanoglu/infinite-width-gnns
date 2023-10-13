@@ -1,7 +1,7 @@
 # Code for Infinite Width Graph Neural Networks for Node Regression/ Classification
 
 ## Paper
-[Infinite Width Graph Neural Networks for Node Regression/ Classification] (https://arxiv.org/abs/2310.08176) 
+[Infinite Width Graph Neural Networks for Node Regression/ Classification](https://arxiv.org/abs/2310.08176) 
 
 
 
@@ -67,5 +67,17 @@ ef stands for effective resistance (how many percent of edges should be deleted)
 ## Some parts of code from (noted in files):
 - https://github.com/zhengdao-chen/GNN4CD
 - https://github.com/tkipf/pygcn
+
+## Cite
+```
+@misc{cobanoglu2023infinite,
+      title={Infinite Width Graph Neural Networks for Node Regression/ Classification}, 
+      author={Yunus Cobanoglu},
+      year={2023},
+      eprint={2310.08176},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+} 
+```
 
 
